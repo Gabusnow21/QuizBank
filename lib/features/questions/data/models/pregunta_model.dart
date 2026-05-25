@@ -12,6 +12,7 @@ class PreguntaModel {
   late String respuestaCorrecta;
   late String justificacion;
   late String nivel;
+  late String tema;
   late DateTime fechaCreacion;
 
   PreguntaModel();
@@ -23,6 +24,7 @@ class PreguntaModel {
       ..respuestaCorrecta = pregunta.respuestaCorrecta
       ..justificacion = pregunta.justificacion
       ..nivel = pregunta.nivel
+      ..tema = pregunta.tema
       ..fechaCreacion = pregunta.fechaCreacion;
     
     if (pregunta.id != null) {
@@ -39,6 +41,7 @@ class PreguntaModel {
       respuestaCorrecta: respuestaCorrecta,
       justificacion: justificacion,
       nivel: nivel,
+      tema: tema,
       fechaCreacion: fechaCreacion,
     );
   }
