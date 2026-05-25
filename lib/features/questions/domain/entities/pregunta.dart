@@ -5,6 +5,7 @@ class Pregunta {
   final String respuestaCorrecta;
   final String justificacion;
   final String nivel;
+  final String tema;
   final DateTime fechaCreacion;
 
   Pregunta({
@@ -14,6 +15,7 @@ class Pregunta {
     required this.respuestaCorrecta,
     required this.justificacion,
     required this.nivel,
+    required this.tema,
     required this.fechaCreacion,
   });
 
@@ -24,6 +26,7 @@ class Pregunta {
     String? respuestaCorrecta,
     String? justificacion,
     String? nivel,
+    String? tema,
     DateTime? fechaCreacion,
   }) {
     return Pregunta(
@@ -33,6 +36,7 @@ class Pregunta {
       respuestaCorrecta: respuestaCorrecta ?? this.respuestaCorrecta,
       justificacion: justificacion ?? this.justificacion,
       nivel: nivel ?? this.nivel,
+      tema: tema ?? this.tema,
       fechaCreacion: fechaCreacion ?? this.fechaCreacion,
     );
   }
